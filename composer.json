@@ -1,5 +1,5 @@
 {
-    "name": "kobalt/laravel-moneybird",
+    "name": "kobaltdigital/laravel-moneybird",
     "description": "A PHP wrapper for the Moneybird API",
     "type": "library",
     "license": "MIT",
