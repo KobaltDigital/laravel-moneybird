@@ -1,0 +1,36 @@
+{
+    "name": "kobalt/laravel-moneybird",
+    "description": "A PHP wrapper for the Moneybird API",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Kobalt\\LaravelMoneybird\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Arne van Hoorn",
+            "email": "arne@kobaltdigital.nl"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "guzzlehttp/guzzle": "^7.0",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0",
+        "symfony/var-dumper": "^6.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kobalt\\LaravelMoneybird\\MoneybirdServiceProvider"
+            ],
+            "aliases": {
+                "Moneybird": "Kobalt\\LaravelMoneybird\\Facades\\Moneybird"
+            }
+        }
+    }
+}
