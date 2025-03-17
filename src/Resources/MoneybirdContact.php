@@ -60,7 +60,7 @@ class MoneybirdContact extends MoneybirdClient
      */
     public function delete(string $id): bool
     {
-        return $this->delete("contacts/{$id}");
+        return parent::delete("contacts/{$id}");
     }
 
     /**
@@ -103,6 +103,6 @@ class MoneybirdContact extends MoneybirdClient
      */
     public function deleteContactPerson(string $contactId, string $contactPersonId): bool
     {
-        return $this->delete("contacts/{$contactId}/contact_people/{$contactPersonId}");
+        return parent::delete("contacts/{$contactId}/contact_people/{$contactPersonId}");
     }
 }
